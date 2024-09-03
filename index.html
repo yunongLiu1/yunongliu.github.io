@@ -3,10 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yunong Liu</title>
+    <title>Yunong Liu - MSCS@Stanford</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <h1>Welcome to Yunong Liu’s Website</h1>
-    <p>This is my personal website.</p>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#cats">Cats</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="hero">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h1>Yunong Liu</h1>
+                        <p class="subtitle">MSCS Student at Stanford University</p>
+                        <p>I am a Master's student in Computer Science at Stanford University, advised by <a href="https://jiajunwu.com">Jiajun Wu</a>. I worked on grounding 4D assembly instructions in internet videos.</p>
+                        <p>I worked closely with <a href="http://weiyuliu.com">Weiyu Liu</a>, <a href="https://ceyzaguirre4.github.io">Cristobal Eyzaguirre</a>, and <a href="https://limanling.github.io">Manling Li</a>.</p>
+                        <p>I received my BEng in Electronics and Computer Science from the University of Edinburgh, where I am grateful to receive advice from
+                            <a href="https://homepages.inf.ed.ac.uk/bonnie/">Bonnie Webber</a>. I spent a wonderful semester and summer at the University of Texas at Austin for my exchange program and summer research internship, I worked with <a href="https://journalism.utexas.edu/faculty/dhiraj-murthy">Dhiraj Murthy</a> on misinformation detection.
+                        <div class="social-links">
+                            <a href="https://github.com/yunongLiu1" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/yunong-liu-6b18351b4/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="mailto:yunong.liu20@gmail.com"><i class="fas fa-envelope"></i></a>
+                            <a href="https://x.com/yunongliu1" target="_blank"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/me/green.jpg" alt="Yunong Liu" class="profile-photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications">
+            <div class="container">
+                <h2>Publications</h2>
+                <div class="publication-list">
+                    <div class="publication-item">
+                        <div class="publication-gif">
+                            <img src="images/ikea_video.gif" alt="IKEA Manuals at Work">
+                        </div>
+                        <div class="publication-content">
+                            <h3>IKEA Manuals at Work: 4D Grounding of Assembly Instructions on Internet Videos</h3>
+                            <p>Yunong Liu, Weiyu Liu, Shubh Khanna, Cristobal Eyzaguirre, Manling Li, Juan Carlos Niebles, Vineeth Ravi, Saumitra Mishra, Jiajun Wu.</p>
+                            <div>
+                                <!-- <span class="venue"><a href="">NeurIPS Datasets and Benchmarks Track 2024</a></span>  -->
+                                 
+                                <span class="tag"><a href="">Paper</a></span> /
+                                <span class="tag"><a href="https://yunongliu1.github.io/ikea-video-manual/">Project Page</a></span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="publication-item">
+                        <div class="publication-gif">
+                            <img src="images/covid_misinfo.png" alt="COVID-19 Misinformation Detection">
+                        </div>
+                        <div class="publication-content">
+                            <h3>COVID-19 Misinformation Detection: Machine-Learned Solutions to the Infodemic</h3>
+                            <p>Yunong Liu*, Nikhil Kolluri*,  Dhiraj Murthy.</p>
+                            <div>
+                                <span class="venue"><a href="">JMIR Infodemiology Vol 2, No 2 (2022)</a></span> /
+                                <span class="tag"><a href="https://infodemiology.jmir.org/2022/2/e38756">Paper</a></span> /
+                                <span class="tag"><a href="https://infodemiology.jmir.org/2022/2/e38756">Project Page</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>Selected Fun Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/emomask/emomask.gif" alt="EMo-Mask Project">
+                        </div>
+                        <div class="project-content">
+                            <h3>EMo-Mask: Emotional Controllable Motion Generation</h3>
+                            <!-- 斜体 -->
+                            <p>Highest Score Course Project on <i>CS348I Computer Graphics in the Era of AI</i> (2024 Winter)</p>
+                            <a href="https://yunongliu1.github.io/emo-mask.github.io/" target="_blank" class="button">Project Page</a>
+
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/justdance/JustDance_giif.gif" alt="Just Dance Everywhere Project">
+                        </div>
+                        <div class="project-content">
+                            <h3>Just Dance Everywhere</h3>
+                            <p>Best Course Project on <i> EE379K Introduction to Computer Vision Course </i> (2022 Spring) at UT Austin</p>
+                            <a href="https://github.com/adiojha629/JustDance_Everywhere" target="_blank" class="button">Project Page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="cats">
+        <div class="container">
+            <h2>My Purr-fect Companions</h2>
+            <div class="cat-grid">
+                <div class="cat-card">
+                    <img src="images/cats/mewomewo.png" alt="Mewomewo" class="cat-image">
+                    <div class="cat-content">
+                        <h3>Mewomewo</h3>
+                        <p><strong>DoB:</strong> October 1, 2012</p>
+                        <p><strong>Role:</strong> The Elegant Lady</p>
+                        <p><strong>Superpowers:</strong>
+                            <span class="cat-trait">Tsundere Queen</span>
+                            <span class="cat-trait">Cleanliness Lover</span>
+                            <span class="cat-trait">Fearless Explorer</span>
+                        </p>
+                        <p>Mewomewo is the queen of the house since 2012. She acts cool but secretly loves attention. She's super brave, except when it comes to mess. You'll often see her checking if the house is clean and tidy.</p>
+                    </div>
+                </div>
+                <div class="cat-card">
+                    <img src="images/cats/xiaopang.png" alt="Xiaopang" class="cat-image">
+                    <div class="cat-content">
+                        <h3>Xiaopang (Little Fat)</h3>
+                        <p><strong>DoB:</strong> July 17, 2014</p>
+                        <p><strong>Role:</strong> The Cuddly Foodie</p>
+                        <p><strong>Superpowers:</strong>
+                            <span class="cat-trait">Cuddle Expert</span>
+                            <span class="cat-trait">Food Lover</span>
+                            <span class="cat-trait">Master of Stealth (when scared)</span>
+
+                        </p>
+                        <p>Xiaopang, our big bundle of love, joined us in 2014. His name means "little fat", but really, he's just extra cuddly! He loves snuggles and treats equally. He might get scared easily, but his heart is as big as his appetite.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Yunong Liu. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
