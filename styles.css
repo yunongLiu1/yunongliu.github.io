@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #266541b0;
-    --secondary-color: #2c3e50;
+    --primary-color: #4e2665b0;
+    --secondary-color:#331d41f3;
     --text-color: #333;
     --bg-color: #f4f4f4;
 }
@@ -330,7 +330,10 @@ footer {
     }
 }
 #cats {
-    background-color: #fff0f5; /* Light pink background */
+    background-color: #f7f0ff; /* Light pink background */ 
+    /*background-color: #fff0f5; /* Light pink background */ 
+
+
     padding: 50px 0;
 }
 
@@ -367,13 +370,15 @@ footer {
 
 .cat-content h3 {
     margin-top: 0;
-    color: #ff69b4;
+    /* color: #ff69b4; */
+    color: #5a1880eb;
     font-size: 1.8em;
 }
 
 .cat-trait {
     display: inline-block;
-    background-color: #ff69b4;
+    /* background-color: #ff69b4; */
+    background-color: #612881f7;
     color: white;
     padding: 5px 10px;
     border-radius: 15px;
