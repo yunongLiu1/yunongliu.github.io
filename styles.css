@@ -475,3 +475,12 @@ nav ul li a {
         font-size: 12px;
     }
 }
+main {
+    padding-top: 60px; /* Adjust this value as needed */
+}
+
+@media (max-width: 768px) {
+    main {
+        padding-top: 80px; /* Increase padding for mobile devices */
+    }
+}
