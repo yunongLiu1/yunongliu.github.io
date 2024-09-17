@@ -484,3 +484,7 @@ main {
         padding-top: 80px; /* Increase padding for mobile devices */
     }
 }
+#clstr_globe {
+    width: 30%;
+    height: 30%;
+}
