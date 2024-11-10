@@ -488,3 +488,9 @@ main {
     width: 30%;
     height: 30%;
 }
+.publication-description {
+    margin-top: 10px;
+    color: #666;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
