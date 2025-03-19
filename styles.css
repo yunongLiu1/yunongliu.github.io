@@ -96,19 +96,19 @@ h1 {
 }
 
 section {
-    padding: 80px 0;
+    padding: 30px 0;
 }
 
 h2 {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     color: var(--secondary-color);
 }
 
 .interests-grid, .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+    gap: 10px;
 }
 
 .interest-item, .project-card {
@@ -162,7 +162,7 @@ footer {
     }
 
     .hero {
-        padding: 80px 0 30px;
+        padding: 30px 0 30px;
     }
 
     h1 {
@@ -292,8 +292,8 @@ footer {
 }
 
 .project-image img {
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 70%;
     object-fit: cover;
 }
 
@@ -493,4 +493,64 @@ main {
     color: #666;
     font-size: 0.9em;
     line-height: 1.4;
+}
+
+#projects {
+    padding: 40px 0; 
+    background-color: #f8f8f8;
+}
+
+.project-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.project-card {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0; 
+    padding: 12px; 
+}
+
+.project-image {
+    flex: 0 0 150px; 
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-content {
+    flex: 1;
+    padding: 0 12px; 
+}
+
+.project-content h3 {
+    margin: 0 0 8px; 
+    font-size: 1.1em;
+}
+
+.project-content p {
+    margin-bottom: 10px; 
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        flex-direction: column;
+        padding: 10px; 
+    }
+
+    .project-image {
+        flex: 0 0 150px;
+    }
+
+    .project-grid {
+        gap: 12px; 
+    }
 }
