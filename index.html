@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Yunong Liu, MSCS student at Stanford University, specializing in Computer Science with a focus on 4D assembly instructions in videos, misinformation detection, and fun projects like EMo-Mask and Just Dance Everywhere.">
-    <meta name="keywords" content="Yunong Liu, Stanford, MSCS, Computer Science, 4D Assembly, Internet Videos, Misinformation Detection, EMo-Mask, Just Dance Everywhere">
+    <meta name="description" content="Yunong Liu, Research Engineer at Luma AI">
+    <meta name="keywords" content="Yunong Liu, Luma AI, Stanford, MSCS, Computer Science, 4D Assembly, Internet Videos, Misinformation Detection, EMo-Mask, Just Dance Everywhere">
     <meta name="author" content="Yunong Liu">
-    <title>Yunong Liu - MSCS@Stanford</title>
+    <title>Yunong Liu - Research Engineer at Luma AI</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -92,6 +92,34 @@
                 <div class="publication-list">
                     <div class="publication-item">
                         <div class="publication-gif">
+                            <video src="images/svd_pts_tracking/video-demo.mp4" controls loop muted playsinline style="max-width:100%; height:auto;"></video>
+                        </div>
+                        <div class="publication-content">
+                            <h3>Taming generative video models for zero-shot optical flow extraction</h3>
+                            <p><a href="https://sekim12.github.io/">Seungwoo Kim*</a>, <a href="https://awwkl.github.io/">Khai Loong Aw*</a>, <a href="https://klemenkotar.github.io/">Klemen Kotar*</a>, <a href="https://ceyzaguirre4.github.io/">Cristobal Eyzaguirre</a>, <a href="https://www.linkedin.com/in/wanhee-lee-31102820b">Wanhee Lee</a>, <a href="https://yunongliu.com/"><b>Yunong Liu</b></a>, <a href="https://www.linkedin.com/in/jared-watrous">Jared Watrous</a>, <a href="https://sstojanov.github.io/">Stefan Stojanov</a>, <a href="https://www.niebles.net/">Juan Carlos Niebles</a>, <a href="https://jiajunwu.com/">Jiajun Wu</a>, <a href="https://web.stanford.edu/~yamins/">Daniel L. K. Yamins</a>.</p>
+                            <div>
+                                <span class="venue"><i>NeurIPS 2025</i> /</span> 
+                                <span class="tag"><a href="https://arxiv.org/pdf/2507.09082">Paper</a></span> /
+                                <span class="tag"><a href="https://github.com/neuroailab/kl_tracing">Code</a></span> /
+                                <span class="tag"><a href="https://neuroailab.github.io/projects/kl_tracing/">Project Page</a></span> /
+                                <span class="tag">
+                                    <iframe 
+                                        src="https://ghbtns.com/github-btn.html?user=neuroailab&repo=kl_tracing&type=star&count=true" 
+                                        frameborder="0" 
+                                        scrolling="0" 
+                                        width="100" 
+                                        height="20"
+                                        title="GitHub Stars">
+                                    </iframe>
+                                </span>
+                            </div>
+                            <p class="publication-description">
+                                We prompt a generative video model to extract optical flow with zero labels and no fine-tuning. KL-tracing computes the KL-divergence between clean and perturbed prediction logits to trace motion—a statistical counterfactual probe building on perturb-and-track (CWM). Applied to LRAS, whose local tokenizer and random-access decoding enable fine-grained control, our method achieves state-of-the-art results on TAP-Vid and generalizes to challenging in-the-wild YouTube clips, outperforming specialized baselines.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="publication-item">
+                        <div class="publication-gif">
                             <img src="images/ikea_video.gif" alt="IKEA Manuals at Work">
                         </div>
                         <div class="publication-content">
@@ -148,20 +176,7 @@
                 <h2>Selected Toy Projects</h2>
                 
                 <div class="project-grid">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/svd_pts_tracking/svd_pts_tracking.png" alt="Tracking Emergence in Video Generation Models">
-                        </div>
-                        <div class="project-content">
-                            <h3>Tracking Emergence in Video Generation Models</h3>
-                            <div>
-                                <span class="tag"><a href="https://yunongliu1.github.io/video-tracking-webpage/">Project Page</a></span>
-                            </div>
-                            <p class="publication-description">
-                                Discovered video diffusion models' emergent ability to track objects without explicit training. Developed novel intervention-based framework revealing models' implicit understanding of physical dynamics.
-                            </p>
-                        </div>
-                    </div>
+                    
                     <div class="project-card">
                         <div class="project-image">
                             <img src="images/emomask/emomask.gif" alt="EMo-Mask Project">
