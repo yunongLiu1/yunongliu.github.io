@@ -270,7 +270,7 @@ footer {
 }
 #projects {
     background-color: #f8f8f8;
-    padding: 50px 0;
+    padding: 40px 0;
 }
 
 .project-grid {
@@ -281,19 +281,19 @@ footer {
 
 .project-card {
     display: flex;
-    background-color: #ffffff;
+    background-color: transparent;
     border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: visible;
+    box-shadow: none;
 }
 
 .project-image {
-    flex: 0 0 200px;
+    flex: 0 0 260px;
 }
 
 .project-image img {
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: auto;
     object-fit: cover;
 }
 
@@ -307,12 +307,14 @@ footer {
 
 .project-content h3 {
     margin-top: 0;
-    margin-bottom: 10px;
-    font-size: 1.2em;
+    margin-bottom: 8px;
+    font-size: 1.05em;
+    font-weight: 500;
 }
 
 .project-content p {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    opacity: 0.9;
 }
 
 .project-links {
@@ -552,5 +554,260 @@ main {
 
     .project-grid {
         gap: 12px; 
+    }
+}
+
+/* --- Subtle visual polish without changing layout --- */
+/* Glass header with backdrop blur */
+header {
+    background: rgba(255, 255, 255, 0.75);
+    -webkit-backdrop-filter: saturate(140%) blur(10px);
+    backdrop-filter: saturate(140%) blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* --- Typography refinements --- */
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+}
+
+h1, h2, h3 {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Noto Sans", "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+h2 {
+    font-weight: 700;
+    letter-spacing: -0.005em;
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+.subtitle {
+    font-weight: 400;
+    letter-spacing: 0.005em;
+    opacity: 0.95;
+}
+
+/* Nav readability */
+nav ul li a {
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+/* Animated underline on nav links */
+nav ul li a {
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2px;
+    height: 2px;
+    background: var(--primary-color);
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: transform 0.25s ease;
+    opacity: 0.9;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Animated, soft hero gradient */
+.hero {
+    background: linear-gradient(120deg, rgba(80, 38, 107, 0.92), rgba(119, 66, 155, 0.92));
+    background-size: 200% 200%;
+    animation: heroGradient 18s ease-in-out infinite;
+}
+
+/* Ensure link visibility on hero */
+.hero a {
+    color: #ffffff;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: rgba(255, 255, 255, 0.65);
+}
+
+.hero a:visited {
+    color: #ffffff;
+}
+
+.hero a:hover {
+    opacity: 0.9;
+}
+
+/* Keep nav link color after visit */
+nav ul li a:visited {
+    color: var(--secondary-color);
+}
+
+/* Global visited fallback */
+a:visited {
+    color: var(--secondary-color);
+}
+
+@keyframes heroGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Card polish: softer hover lift and shadow */
+.interest-item, .project-card, .publication-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.interest-item:hover, .project-card:hover, .publication-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.12);
+}
+
+/* Round media slightly */
+.publication-gif img, .publication-gif video, .project-image img {
+    border-radius: 8px;
+}
+
+/* Pill tags and buttons */
+/* Publications tags use gradient pill (more prominent) */
+.publication-item .tag a {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 9999px;
+    background: linear-gradient(90deg, #5a189a, #7b2cbf);
+    color: #ffffff !important;
+    text-decoration: none;
+    border: 0;
+    box-shadow: 0 6px 14px rgba(123, 44, 191, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.publication-item .tag a:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(123, 44, 191, 0.3);
+}
+
+/* Default tag style (subtle) */
+.tag a {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 9999px;
+    background: rgba(94, 53, 121, 0.08);
+    color: var(--secondary-color);
+    text-decoration: none;
+    border: 1px solid rgba(94, 53, 121, 0.18);
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.tag a:hover {
+    background: rgba(94, 53, 121, 0.14);
+    transform: translateY(-1px);
+}
+
+/* Toy Projects buttons become subtle outlined pills */
+#projects a.button, #projects .button {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 9999px;
+    background: transparent;
+    color: var(--secondary-color) !important;
+    text-decoration: none;
+    border: 1px solid rgba(94, 53, 121, 0.22);
+    box-shadow: none;
+    transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+#projects a.button:hover, #projects .button:hover {
+    background: rgba(94, 53, 121, 0.08);
+    transform: translateY(-1px);
+    border-color: rgba(94, 53, 121, 0.32);
+}
+
+/* Smooth scrolling and offset for fixed header */
+html {
+    scroll-behavior: smooth;
+}
+
+section[id] {
+    scroll-margin-top: 120px;
+}
+
+@media (max-width: 768px) {
+    section[id] {
+        scroll-margin-top: 140px;
+    }
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* --- Toy Projects de-emphasis (last wins) --- */
+#projects h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+#projects .project-card {
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+}
+
+#projects .project-image {
+    flex: 0 0 300px;
+    margin-right: 0.5rem;
+}
+
+#projects .project-image img {
+    width: 100%;
+    height: auto;
+}
+
+#projects .project-content {
+    padding: 8px 0;
+}
+
+#projects .project-content h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0.95;
+}
+
+#projects .project-content p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    #projects .project-image {
+        flex: 0 0 220px;
     }
 }
