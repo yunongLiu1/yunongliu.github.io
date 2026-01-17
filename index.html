@@ -69,7 +69,14 @@
                         </div>
                     </div>
                     <div class="about-image">
-                        <img src="images/me/green.jpg" alt="Yunong Liu" class="profile-photo">
+                        <div class="profile-photo-container">
+                            <img src="images/me/green.jpg" alt="Yunong Liu" class="profile-photo active">
+                            <img src="images/me/AI/ai-1.png" alt="Yunong Liu AI 1" class="profile-photo">
+                            <img src="images/me/AI/ai-2.png" alt="Yunong Liu AI 2" class="profile-photo">
+                            <img src="images/me/AI/ai-3.png" alt="Yunong Liu AI 3" class="profile-photo">
+                            <img src="images/me/AI/ai-4.png" alt="Yunong Liu AI 4" class="profile-photo">
+                            <img src="images/me/AI/ai-5.png" alt="Yunong Liu AI 5" class="profile-photo">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -396,5 +403,23 @@
             <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=1V3zSmncru-KaKpAnyas3mze8gtPhqqQxH6qrVwoGeE&cl=ffffff&w=a"></script>
         </div>
     </footer>
+
+    <script>
+        // Profile photo auto-cycling
+        const profilePhotos = document.querySelectorAll('.profile-photo');
+        let currentIndex = 0;
+
+        // Auto-cycle through photos every 3 seconds
+        setInterval(function() {
+            // Remove active class from current photo
+            profilePhotos[currentIndex].classList.remove('active');
+
+            // Move to next photo
+            currentIndex = (currentIndex + 1) % profilePhotos.length;
+
+            // Add active class to new photo
+            profilePhotos[currentIndex].classList.add('active');
+        }, 3000); // Change photo every 3 seconds
+    </script>
 </body>
 </html>
