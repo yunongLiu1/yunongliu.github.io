@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Yunong Liu, Research Engineer at Luma AI">
-    <meta name="keywords" content="Yunong Liu, Luma AI, Stanford, MSCS, Computer Science, 4D Assembly, Internet Videos, Misinformation Detection, EMo-Mask, Just Dance Everywhere">
+    <meta name="description" content="Yunong Liu, Research Engineer at Luma AI working on usable visual generation, editable design artifacts, multimodal systems, evals, and agent-operable media.">
+    <meta name="keywords" content="Yunong Liu, Luma AI, Stanford, multimodal generation, video generation, image generation, usable visual generation, structured visual generation, editable visual generation, generative UI, design artifacts, SVG, HTML, UI components, reinforcement learning, evaluation, Uni-1, Ray3, 4D grounding">
     <meta name="author" content="Yunong Liu">
-    <title>Yunong Liu - Research Engineer at Luma AI</title>
+    <title>Yunong Liu - Multimodal Generative Systems</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -28,18 +28,15 @@
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
+                <li><a href="#current-work">Current Work</a></li>
+                <li><a href="#model-releases">Model Releases</a></li>
+                <li><a href="#research-interests">Interests</a></li>
                 <li><a href="#publications">Publications</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#awards">Awards</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#cats">Cats</a></li>
 
                 <!-- <li><a href="#contact">Contact</a></li> -->
             </ul>
         </nav>
-        <div style="text-align: center; margin-top: 10px; font-size: 1.2em; color: #74279bcc;">
-            <b><p>Scared? Yes. Give up? Never! 知惧而行 <br>Take the risk or lose the chance. 不负此时</p></b>
-        </div>
     </header>
 
     <main>
@@ -51,11 +48,15 @@
                 
                         <h1>Yunong Liu</h1>
                         <p class="subtitle">Research Engineer at Luma AI</p>
-                        <p>👨‍💻 I am a Research Engineer at <a href="https://lumalabs.ai">Luma AI</a>, where I work on video and image generation and understanding. Most recently, I worked on <a href="https://lumalabs.ai/uni-1">Uni-1</a>, Luma's first unified understanding and generation model — a decoder-only autoregressive transformer that interleaves text and images for joint reasoning and visual synthesis. I also worked on <a href="https://lumalabs.ai/ray">Ray3</a>, Luma's video generation model. I recently got interested in agentic models capable of tool use and multi-step reasoning, more controllable and expressive generative systems, and editable infographics and visual media. My past work has also explored applying online reinforcement learning (GRPO) to align flow matching models with human preferences across compositional and aesthetic objectives, including designing reward models and developing techniques to mitigate reward over-optimization.</p>
-                        <p>🎓 Previously, I obtained my Master's degree in Computer Science at Stanford University (GPA: 3.99), advised by <a href="https://jiajunwu.com">Jiajun Wu</a>. I worked closely with <a href="https://limanling.github.io">Manling Li</a>, <a href="http://weiyuliu.com">Weiyu Liu</a>, and <a href="https://ceyzaguirre4.github.io">Chris Eyzaguirre</a> on projects including grounding 4D assembly instructions in internet videos and probing emergence in generative video models. I also had the pleasure of working with <a href="https://www.niebles.net">Juan Carlos Niebles</a> and <a href="https://sstojanov.github.io">Stefan Stojanov</a>.</p>
-                        <p>🏫 I received my BEng in Electronics and Computer Science from the University of Edinburgh (joint degree <b>with Honors</b>), where I ranked 2nd in my degree class. During my time there, I was fortunate to work with <a href="https://homepages.inf.ed.ac.uk/bonnie/">Bonnie Webber</a> on natural language processing research.</p>
-                        <p>🌍 I also spent a wonderful semester and summer at the University of Texas at Austin for my exchange program and summer research internship, where I worked with <a href="https://journalism.utexas.edu/faculty/dhiraj-murthy">Dhiraj Murthy</a> on misinformation detection.</p>
-                        <p><strong>🎭 Fun fact:</strong> I have a twin sister who works in a completely different field - museology! It's fascinating how we've taken such divergent paths in our careers.</p>
+                        <p>I work on multimodal generation and visual systems that make model outputs useful in real workflows. My recent work focuses on editable visual generation: turning flat outputs into structured media that people and agents can inspect, refine, and build on.</p>
+                        <p>At <a href="https://lumalabs.ai">Luma AI</a>, I now lead Layering, a project that converts flat generated or uploaded media into editable components across vector, text, and pixel representations. I work across layered data, representation/tokenizer and decoder experiments, evals, and the agent loop that inspects and revises the canvas. Before Layering, I built the RL workflow for <a href="https://lumalabs.ai/ray">Ray3</a> and ran RL and other experiments, along with data work around <a href="https://lumalabs.ai/uni-1">Uni-1</a>.</p>
+                        <p>Previously, I completed my M.S. in Computer Science at Stanford, advised by <a href="https://jiajunwu.com">Jiajun Wu</a>, where I led work on 4D grounding of assembly instructions in internet videos. I received my BEng in Electronics and Computer Science from the University of Edinburgh, ranking 2nd in my cohort.</p>
+                        <div class="focus-tags" aria-label="Research focus areas">
+                            <span>Layering</span>
+                            <span>Visual model RL</span>
+                            <span>Model behavior evals</span>
+                            <span>4D grounding</span>
+                        </div>
     
                         <!-- <font color="rgba(234, 47, 47, 0.839);"> <b>I am actively looking for a PhD position starting from Fall 2025. :> Feel free to check my <a href="files/resume.pdf">resume</a> or reach out to me at <a href="mailto:yunong.liu20@gmail.com">yunong.liu20@gmail.com</a>!</b></font> -->
 
@@ -65,7 +66,8 @@
                             <a href="https://www.linkedin.com/in/yunong-liu-6b18351b4/" target="_blank"><i class="fab fa-linkedin"></i></a>
                             <a href="mailto:yunong.liu20@gmail.com"><i class="fas fa-envelope"></i></a>
                             <a href="https://x.com/yunongliu1" target="_blank"><i class="fab fa-twitter"></i></a>
-                            <a href="https://scholar.google.com/citations?user=676UJYgAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar-square"></i></a>
+                            <a href="https://scholar.google.com/citations?user=676UJYgAAAAJ&amp;hl=en" target="_blank"><i class="ai ai-google-scholar-square"></i></a>
+                            <a href="images/me/resume/Resume-May11.html" target="_blank" class="resume-link" rel="noopener noreferrer">Resume</a>
                         </div>
                     </div>
                     <div class="about-image">
@@ -82,21 +84,82 @@
             </div>
         </section>
 
+        <section id="current-work">
+            <div class="container">
+                <h2>Current Work</h2>
+                <div class="current-work-grid">
+                    <article class="current-work-item">
+                        <h3>Layering: Image to Components</h3>
+                        <p>I lead Layering, which turns flat visual outputs into editable components across vectorized SVG, text, and alpha-aware pixels. The goal is to make generated media structured enough for people and agents to revise, verify, and build on.</p>
+                    </article>
+                    <article class="current-work-item">
+                        <h3>RL &amp; Reward Modeling</h3>
+                        <p>I built the RL workflow for Ray3 and ran reward-modeling and calibration experiments for visual generators, focusing on prompt following, composition, motion, visual quality, and avoiding reward over-optimization.</p>
+                    </article>
+                    <article class="current-work-item">
+                        <h3>Model Behavior Evals</h3>
+                        <p>I build evals that measure visual model behavior: information preservation, instruction following, language grounding in images or video, and usefulness in real workflows. These evals guide data, reward, conditioning, and model changes.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="model-releases">
+            <div class="container">
+                <h2>Model Releases</h2>
+                <div class="model-release-list">
+                    <article class="model-release-item">
+                        <div class="model-release-media">
+                            <video controls muted playsinline preload="none" poster="images/model-releases/uni-1.jpg">
+                                <source src="https://static.cdn-luma.com/files/sanity/fde2489c-d867-4a77-a04e-ba19fefe4f29.mp4" type="video/mp4">
+                                <img src="images/model-releases/uni-1.jpg" alt="Uni-1 preview">
+                            </video>
+                        </div>
+                        <div class="model-release-content">
+                            <h3><a href="https://lumalabs.ai/uni-1" target="_blank" rel="noopener noreferrer">Uni-1</a></h3>
+                            <p>Uni-1 is Luma's unified multimodal model for interleaved language and image understanding, reasoning, and generation.</p>
+                            <ul class="contribution-list">
+                                <li>Ran RL and other experiments, along with data work around unified multimodal understanding and generation.</li>
+                            </ul>
+                            <p class="model-release-links">
+                                <a href="https://lumalabs.ai/uni-1" target="_blank" rel="noopener noreferrer">Launch Page</a> /
+                                <a href="https://x.com/LumaLabsAI/status/2036107826498544110" target="_blank" rel="noopener noreferrer">Launch Video</a>
+                            </p>
+                        </div>
+                    </article>
+                    <article class="model-release-item">
+                        <div class="model-release-media">
+                            <video controls muted playsinline preload="none" poster="images/model-releases/ray3.jpg">
+                                <source src="https://static.cdn-luma.com/files/sanity/efd14522-2187-4f01-a2f4-f11240fae610.mp4" type="video/mp4">
+                                <img src="images/model-releases/ray3.jpg" alt="Ray3 preview">
+                            </video>
+                        </div>
+                        <div class="model-release-content">
+                            <h3><a href="https://lumalabs.ai/ray" target="_blank" rel="noopener noreferrer">Ray3</a></h3>
+                            <p>Ray3 is Luma's next-generation video model, focused on reasoning-driven generation, controllable video-to-video workflows, character reference, keyframes, HDR, and production-grade fidelity.</p>
+                            <ul class="contribution-list">
+                                <li>Built the Ray3 RL workflow and ran reward, data, and evaluation experiments for video generation quality and prompt following.</li>
+                            </ul>
+                            <p class="model-release-links">
+                                <a href="https://lumalabs.ai/ray" target="_blank" rel="noopener noreferrer">Launch Page</a> /
+                                <a href="https://x.com/LumaLabsAI/status/1968684330034606372" target="_blank" rel="noopener noreferrer">Launch Video</a>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <section id="research-interests">
             <div class="container">
-                <h2>Research Interests</h2>
-                <ul>
-                    <li><strong>Reinforcement Learning for Generative Models:</strong> Applying RL to improve video and image generation models — using reward signals to shape generation quality, controllability, and alignment with human intent</li>
-                    <li><strong>Agentic AI Systems:</strong> Building and studying agentic models with tool-calling capabilities for complex multi-step reasoning and autonomous interaction with external environments</li>
-                    <li><strong>Controllable Image and Video Generation:</strong> Developing more precise control mechanisms for visual synthesis, enabling fine-grained, user-guided generation with greater semantic and structural fidelity</li>
-                    <li><strong>Editable Infographics and Visual Media:</strong> Creating systems for interactive editing of infographics and generated visual content, bridging the gap between AI generation and human-centric design workflows</li>
-                </ul>
+                <h2>This Year ✨</h2>
+                <p class="research-direction-intro">This year, I am interested in visual generation as a bridge between pixels, structure, and code. I want generated artifacts to be editable, shareable, and collaborative: layouts, diagrams, interfaces, product visuals, and design systems that people and agents can inspect, revise, verify, and reuse. Layering is one attempt at this direction, and I am especially interested in how image outputs can connect to SVG, HTML, UI components, and other code-backed representations.</p>
             </div>
         </section>
 
         <section id="publications">
             <div class="container">
-                <h2>Publications</h2>
+                <h2>Selected Publications</h2>
                 <div class="publication-list">
                     <div class="publication-item">
                         <div class="publication-gif">
@@ -104,7 +167,7 @@
                         </div>
                         <div class="publication-content">
                             <h3>CaptionQA: Is Your Caption as Useful as the Image Itself?</h3>
-                            <p><a href="https://bronyayang.github.io/personal_website/">Shijia Yang</a>*, <b>Yunong Liu</b>*, <a href="https://scholar.google.com/citations?user=TAbgR14AAAAJ&hl=en">Bohan Zhai</a>*, Ximeng Sun, Zicheng Liu, Emad Barsoum, <a href="https://limanling.github.io">Manling Li</a>, <a href="https://www.cs.utexas.edu/people/faculty-researchers/chenfeng-xu">Chenfeng Xu</a>.</p> (*equal contribution)
+                            <p><a href="https://bronyayang.github.io/personal_website/">Shijia Yang</a>*, <b>Yunong Liu</b>*, <a href="https://scholar.google.com/citations?user=TAbgR14AAAAJ&amp;hl=en">Bohan Zhai</a>*, Ximeng Sun, Zicheng Liu, Emad Barsoum, <a href="https://limanling.github.io">Manling Li</a>, <a href="https://www.cs.utexas.edu/people/faculty-researchers/chenfeng-xu">Chenfeng Xu</a>.</p> (*equal contribution)
                             <div>
                                 <span class="venue"><i>CVPR 2026</i></span> /
                                 <span class="tag"><a href="https://arxiv.org/abs/2511.21025">Paper</a></span> /
@@ -121,7 +184,7 @@
                                 </span>
                             </div>
                             <p class="publication-description">
-                                Introduced CaptionQA, a utility-based benchmark evaluating image captions across 4 domains (Natural, Document, E-commerce, Embodied AI) with 33,027 multiple-choice questions. Found substantial gaps (9.2-32.4%) between image and caption utility even for state-of-the-art MLLMs, revealing that standard QA-on-image benchmarks miss critical information loss in caption generation.
+                                Equal-contribution work introducing CaptionQA, a utility-based benchmark with 33,027 multiple-choice questions across Natural, Document, E-commerce, and Embodied AI domains. We show measurable gaps between image and caption utility even for state-of-the-art multimodal models, reflecting my interest in evals that measure whether visual representations preserve the information people actually need.
                             </p>
                         </div>
                     </div>
@@ -150,7 +213,7 @@
                                 </span>
                             </div>
                             <p class="publication-description">
-                                We prompt a generative video model to extract optical flow with zero labels and no fine-tuning. KL-tracing computes the KL-divergence between clean and perturbed prediction logits to trace motion—a statistical counterfactual probe building on perturb-and-track (CWM). Applied to LRAS, whose local tokenizer and random-access decoding enable fine-grained control, our method achieves state-of-the-art results on TAP-Vid and generalizes to challenging in-the-wild YouTube clips, outperforming specialized baselines.
+                                Contributor to a counterfactual probe over video-diffusion logits that extracts optical flow with no labels and no fine-tuning. The method achieves state-of-the-art TAP-Vid results, generalizes to in-the-wild videos, and outperforms specialized optical-flow baselines.
                             </p>
                         </div>
                     </div>
@@ -180,7 +243,7 @@
                                 </span>
                             </div>
                             <p class="publication-description">
-                                Created first dataset aligning real-world assembly videos with 3D models and instruction manuals. Developed methods for dense spatio-temporal correspondences in unconstrained videos.
+                                First-author work and sole student lead on the first dataset aligning real-world assembly videos with 3D models and instruction manuals. Built cross-frame optimization with temporal-consistency constraints across 34k+ frames over 98 videos, and coordinated annotation / validation for evaluating whether models can ground human instructions in real visual workflows.
                             </p>
                         </div>
                     </div>
@@ -209,7 +272,7 @@
 
         <section id="projects">
             <div class="container">
-                <h2>Toy Projects that I enjoyed doing</h2>
+                <h2>Selected Toy/Course Projects</h2>
                 
                 <div class="project-grid">
                     
@@ -218,8 +281,8 @@
                             <img src="images/emomask/emomask.gif" alt="EMo-Mask Project">
                         </div>
                         <div class="project-content">
-                            <h3>EMo-Mask: Emotional Controllable Motion Generation</h3>
-                            <p>Course Project on <i>CS348I Computer Graphics in the Era of AI</i> (2024 Winter) | <a href="https://yunongliu1.github.io/emo-mask.github.io/" target="_blank" class="button">Project Page</a></p>
+                            <h3>EMo-Mask</h3>
+                            <p>Emotion-controllable motion generation · Stanford CS348I · 2024 <a href="https://yunongliu1.github.io/emo-mask.github.io/" target="_blank" class="button">Project</a></p>
                             
 
                         </div>
@@ -229,8 +292,8 @@
                             <img src="images/justdance/JustDance_giif.gif" alt="Just Dance Everywhere Project">
                         </div>
                         <div class="project-content">
-                            <h3>Just Dance Everywhere (Best Course Project Award) </h3>
-                            <p> <i> EE379K Introduction to Computer Vision Course </i> (2022 Spring) at UT Austin | <a href="https://github.com/adiojha629/JustDance_Everywhere" target="_blank" class="button">Project Page</a></p>
+                            <h3>Just Dance Everywhere</h3>
+                            <p>Best Course Project Award · UT Austin EE379K · 2022 <a href="https://github.com/adiojha629/JustDance_Everywhere" target="_blank" class="button">GitHub</a></p>
                             
                         </div>
                     </div>
@@ -239,9 +302,8 @@
                             <img src="images/cs148/scene_render512.png" alt="Gates 3rd Floor Project">
                         </div>
                         <div class="project-content">
-                            <h3>Gates Building 3rd Floor Render (A+ Grade & Course Showcase Feature) </h3>
-                            <p> <i>CS 148: Introduction to Computer Graphics and Imaging</i> (Autumn 2024)|<a href="images/cs148/scene_render512.png" target="_blank" class="button">Project Page</a> |
-                            | <a href="https://web.stanford.edu/class/cs148/showcase.html" target="_blank" class="button">Course Showcase</a> </p> 
+                            <h3>Gates 3rd Floor Render</h3>
+                            <p>A+ grade and course showcase · Stanford CS148 · 2024 <a href="images/cs148/scene_render512.png" target="_blank" class="button">Render</a> <a href="https://web.stanford.edu/class/cs148/showcase.html" target="_blank" class="button">Showcase</a></p>
                             
                         </div>
                     </div>
@@ -260,7 +322,7 @@
                 </ul>
             </div>
         </section>
-        <section class="section" id="awards">
+        <section class="section" id="experience">
             <div class="container grid">
                 <h2>Other Experience</h2>
                 <ul>
