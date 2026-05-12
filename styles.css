@@ -1157,15 +1157,22 @@ section[id] {
 
     .about-text {
         flex: none;
-        overflow: visible;
+        overflow: hidden;
     }
 
     .about-text p,
     .research-direction-intro,
     .publication-content,
     .project-content {
-        overflow-wrap: break-word;
+        max-width: 100%;
+        overflow-wrap: anywhere;
         word-break: normal;
+    }
+
+    .about-text p {
+        display: block;
+        width: 100%;
+        white-space: normal;
     }
 
     .focus-tags,
@@ -1179,8 +1186,8 @@ section[id] {
     .hero .container,
     .about-content,
     .about-text {
-        width: 320px;
-        max-width: calc(100vw - 48px);
+        width: 100%;
+        max-width: calc(100vw - 36px);
     }
 
     .focus-tags {
