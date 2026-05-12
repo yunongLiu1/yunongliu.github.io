@@ -16,6 +16,7 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--bg-color);
+    overflow-x: hidden;
 }
 
 .container {
@@ -93,13 +94,17 @@ h1 {
 }
 
 .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
     margin-top: 20px;
 }
 
 .social-links a {
     color: white;
     font-size: 1.5rem;
-    margin: 0 10px;
+    margin: 0;
     transition: opacity 0.3s ease;
 }
 
@@ -118,6 +123,7 @@ h1 {
     flex-wrap: wrap;
     gap: 8px;
     margin-top: 16px;
+    max-width: 100%;
 }
 
 .focus-tags span {
@@ -221,11 +227,14 @@ footer {
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
+    width: 100%;
+    min-width: 0;
 }
 
 .about-text {
     flex: 1;
     text-align: left;
+    min-width: 0;
 }
 
 .about-image {
@@ -262,6 +271,7 @@ footer {
 
     .about-text {
         text-align: center;
+        width: 100%;
     }
 }
 /* Publication styles */
@@ -503,6 +513,15 @@ nav ul li a {
 }
 
 @media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .personal-motto {
+        display: none;
+    }
+
     nav ul {
         flex-direction: row;
         justify-content: space-around;
@@ -519,13 +538,86 @@ nav ul li a {
     }
 
     .hero {
-        padding-top: 120px; /* Increase top padding to prevent content overlap */
+        padding: 112px 0 34px;
+        overflow: hidden;
+    }
+
+    .hero .container {
+        display: block;
+    }
+
+    .about-content {
+        width: 100%;
+        gap: 1.25rem;
+    }
+
+    .about-text p {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+
+    .focus-tags {
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .focus-tags span {
+        max-width: 100%;
+        white-space: normal;
+    }
+
+    .social-links {
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .social-links a {
+        font-size: 1.35rem;
+    }
+
+    .social-links .resume-link {
+        flex-basis: 100%;
+        text-align: center;
+        font-size: 0.95rem;
+        vertical-align: 0;
+    }
+
+    .profile-photo-container,
+    .profile-photo {
+        width: min(250px, 72vw);
+        height: min(250px, 72vw);
     }
 }
 
 @media (max-width: 480px) {
+    .container {
+        padding: 0 18px;
+    }
+
     nav ul li a {
         font-size: 12px;
+    }
+
+    .hero {
+        padding-top: 92px;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+        line-height: 1.15;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .about-text p {
+        font-size: 0.98rem;
+        line-height: 1.55;
+    }
+
+    .focus-tags span {
+        font-size: 0.82rem;
     }
 }
 main {
@@ -773,7 +865,7 @@ html {
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
     line-height: 1.7;
-    letter-spacing: 0.01em;
+    letter-spacing: 0;
 }
 
 h1, h2, h3 {
@@ -782,12 +874,12 @@ h1, h2, h3 {
 
 h1 {
     font-weight: 700;
-    letter-spacing: -0.01em;
+    letter-spacing: 0;
 }
 
 h2 {
     font-weight: 700;
-    letter-spacing: -0.005em;
+    letter-spacing: 0;
     font-size: 1.8rem;
 }
 
@@ -804,7 +896,7 @@ h3 {
 /* Nav readability */
 nav ul li a {
     font-weight: 600;
-    letter-spacing: 0.02em;
+    letter-spacing: 0;
 }
 
 /* Animated underline on nav links */
@@ -1043,5 +1135,56 @@ section[id] {
 
     #projects .project-image {
         flex: none;
+    }
+}
+
+@media (max-width: 768px) {
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .hero .container,
+    .about-content,
+    .about-text {
+        width: min(100%, calc(100vw - 36px));
+        max-width: calc(100vw - 36px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-text {
+        flex: none;
+        overflow: visible;
+    }
+
+    .about-text p,
+    .research-direction-intro,
+    .publication-content,
+    .project-content {
+        overflow-wrap: break-word;
+        word-break: normal;
+    }
+
+    .focus-tags,
+    .social-links {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero .container,
+    .about-content,
+    .about-text {
+        width: 320px;
+        max-width: calc(100vw - 48px);
+    }
+
+    .focus-tags {
+        align-items: center;
+        flex-direction: column;
     }
 }
