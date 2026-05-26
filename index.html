@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Yunong Liu, Multimodal Generation Researcher at Luma AI working on multimodal generation, post-training, reward and evaluation loops, multi-turn agents, and structured visual systems.">
+    <meta name="description" content="Yunong Liu, Research Engineer at Luma AI working on structured visual generation, video post-training, reward modeling, and multimodal evaluation.">
     <meta name="keywords" content="Yunong Liu, Luma AI, Stanford, multimodal generation, video generation, image generation, post-training, reward modeling, reinforcement learning, long-horizon evaluation, multi-turn agents, structured visual generation, editable visual generation, generative UI, design artifacts, SVG, HTML, UI components, Uni-1, Ray3, 4D grounding">
     <meta name="author" content="Yunong Liu">
     <title>Yunong Liu</title>
@@ -49,13 +49,15 @@
                     <div class="about-text">
                         <h1>Yunong Liu</h1>
                         <p class="subtitle">Research Engineer at Luma AI</p>
-                        <p>Recently, my work has focused on multimodal generation and structured visual generation that connects pixels to code, agents, and people. At <a href="https://lumalabs.ai">Luma AI</a>, I lead Layering, which turns flat generated or uploaded media into editable components across vector, text, and pixel representations, so outputs can be revised, verified, and reused across multiple turns. Alongside this, I work on post-training, reward modeling, and evaluation: how to define, measure, and improve what "good" output means for real user workflows. Before Layering, I built the RL workflow for <a href="https://lumalabs.ai/ray">Ray3</a> and worked on diffusion RL across Ray3 and <a href="https://lumalabs.ai/uni-1">Uni-1</a>, including experiments around video-generation conditioning, data ablations, caption variance, OCR, aesthetic, and motion reward signals, plus early data and evaluation work.</p>
-                        <p>Previously, I completed my M.S. in Computer Science at Stanford, advised by <a href="https://jiajunwu.com">Jiajun Wu</a>, where I led work on 4D grounding of assembly instructions in internet videos. I received my BEng in Electronics and Computer Science from the University of Edinburgh, ranking 2nd in my cohort.</p>
+                        <p>I work on structured visual generation, video post-training, reward modeling, and multimodal evaluation.</p>
+                        <p>I lead Layering, a structured visual generation system that turns flat generated images or design media into editable raster, text, vector, and alpha-aware components for multi-turn human and agent editing.</p>
+                        <p>Before Layering, I built the experimental RL/post-training workflow for <a href="https://lumalabs.ai/ray">Ray3</a> video generation, including sample generation loops, reward modeling, VLM-as-judge graders, held-out evaluation, and diffusion RL, DPO, and GRPO-style experiments. I also contributed RL/data/eval experiments for <a href="https://lumalabs.ai/uni-1">Uni-1</a>, including OCR-focused rewards, caption/data ablations, and early evaluation.</p>
+                        <p>Before Luma, I completed my Stanford MSCS with <a href="https://jiajunwu.com">Jiajun Wu</a>, where I led IKEA Manuals at Work, a first-author NeurIPS 2024 project on 4D grounding of real-world assembly videos to 3D structure over time. I received my BEng in Electronics and Computer Science from the University of Edinburgh, ranking 2nd in my cohort.</p>
                         <div class="focus-tags" aria-label="Research focus areas">
                             <span>Structured visual generation</span>
+                            <span>Video post-training</span>
                             <span>Reward modeling</span>
-                            <span>Multi-turn multimodal agents</span>
-                            <span>4D grounding</span>
+                            <span>Multimodal evaluation</span>
                         </div>
     
                         <!-- <font color="rgba(234, 47, 47, 0.839);"> <b>I am actively looking for a PhD position starting from Fall 2025. :> Feel free to check my <a href="files/resume.pdf">resume</a> or reach out to me at <a href="mailto:yunong.liu20@gmail.com">yunong.liu20@gmail.com</a>!</b></font> -->
@@ -90,11 +92,11 @@
                 <div class="current-work-grid">
                     <article class="current-work-item">
                         <h3>Multi-Turn Agent Editing</h3>
-                        <p>I lead Layering, which turns flat visual outputs into editable components across vectorized SVG, text, and alpha-aware pixels. The goal is to make generated media structured enough for people and agents to inspect, revise, verify, and build on across multiple turns.</p>
+                        <p>I lead Layering, which turns flat generated images or design media into editable components across vectorized SVG, text, and alpha-aware pixels. The goal is to make generated media structured enough for people and agents to inspect, revise, verify, and build on across multiple turns.</p>
                     </article>
                     <article class="current-work-item">
                         <h3>RL &amp; Reward Modeling</h3>
-                        <p>I work on diffusion RL, reward modeling, and calibration experiments for visual generators, including the Ray3 RL workflow, OCR, aesthetic, and motion reward signals, VLM-as-judge graders, and held-out evaluation calibrated against human preference and designed to resist reward over-optimization.</p>
+                        <p>I built the Ray3 experimental RL/post-training workflow for video generation, including sample generation loops, diffusion RL, DPO, GRPO-style experiments, reward modeling, VLM-as-judge graders, and held-out evaluation calibrated against human preference.</p>
                     </article>
                     <article class="current-work-item">
                         <h3>Model Behavior Evals</h3>
@@ -110,25 +112,6 @@
                 <div class="model-release-list">
                     <article class="model-release-item">
                         <div class="model-release-media">
-                            <video controls muted playsinline preload="none" poster="images/model-releases/uni-1.jpg">
-                                <source src="https://static.cdn-luma.com/files/sanity/fde2489c-d867-4a77-a04e-ba19fefe4f29.mp4" type="video/mp4">
-                                <img src="images/model-releases/uni-1.jpg" alt="Uni-1 preview">
-                            </video>
-                        </div>
-                        <div class="model-release-content">
-                            <h3><a href="https://lumalabs.ai/uni-1" target="_blank" rel="noopener noreferrer">Uni-1</a></h3>
-                            <p>Uni-1 is Luma's unified multimodal model for interleaved language and image understanding, reasoning, and generation.</p>
-                            <ul class="contribution-list">
-                                <li>Worked on diffusion RL, data ablations, caption-variance studies, and early evaluation for unified multimodal understanding and generation.</li>
-                            </ul>
-                            <p class="model-release-links">
-                                <a href="https://lumalabs.ai/uni-1" target="_blank" rel="noopener noreferrer">Launch Page</a> /
-                                <a href="https://x.com/LumaLabsAI/status/2036107826498544110" target="_blank" rel="noopener noreferrer">Launch Video</a>
-                            </p>
-                        </div>
-                    </article>
-                    <article class="model-release-item">
-                        <div class="model-release-media">
                             <video controls muted playsinline preload="none" poster="images/model-releases/ray3.jpg">
                                 <source src="https://static.cdn-luma.com/files/sanity/efd14522-2187-4f01-a2f4-f11240fae610.mp4" type="video/mp4">
                                 <img src="images/model-releases/ray3.jpg" alt="Ray3 preview">
@@ -138,11 +121,30 @@
                             <h3><a href="https://lumalabs.ai/ray" target="_blank" rel="noopener noreferrer">Ray3</a></h3>
                             <p>Ray3 is Luma's next-generation video model, focused on reasoning-driven generation, controllable video-to-video workflows, character reference, keyframes, HDR, and production-grade fidelity.</p>
                             <ul class="contribution-list">
-                                <li>Built the Ray3 RL workflow and ran diffusion RL, reward, data, and evaluation experiments across video-generation conditioning, caption variance, OCR, aesthetic, motion, prompt following, and product-relevant behavior.</li>
+                                <li>Built the experimental RL/post-training workflow for video generation, including sample generation loops, reward modeling, VLM-as-judge graders, held-out evaluation, and diffusion RL, DPO, and GRPO-style experiments.</li>
                             </ul>
                             <p class="model-release-links">
                                 <a href="https://lumalabs.ai/ray" target="_blank" rel="noopener noreferrer">Launch Page</a> /
                                 <a href="https://x.com/LumaLabsAI/status/1968684330034606372" target="_blank" rel="noopener noreferrer">Launch Video</a>
+                            </p>
+                        </div>
+                    </article>
+                    <article class="model-release-item">
+                        <div class="model-release-media">
+                            <video controls muted playsinline preload="none" poster="images/model-releases/uni-1.jpg">
+                                <source src="https://static.cdn-luma.com/files/sanity/fde2489c-d867-4a77-a04e-ba19fefe4f29.mp4" type="video/mp4">
+                                <img src="images/model-releases/uni-1.jpg" alt="Uni-1 preview">
+                            </video>
+                        </div>
+                        <div class="model-release-content">
+                            <h3><a href="https://lumalabs.ai/uni-1" target="_blank" rel="noopener noreferrer">Uni-1</a></h3>
+                            <p>Uni-1 is Luma's unified multimodal model for interleaved language and image understanding, reasoning, and generation.</p>
+                            <ul class="contribution-list">
+                                <li>Contributed RL/data/eval experiments for unified multimodal understanding and generation, including OCR-focused rewards, caption/data ablations, and early evaluation.</li>
+                            </ul>
+                            <p class="model-release-links">
+                                <a href="https://lumalabs.ai/uni-1" target="_blank" rel="noopener noreferrer">Launch Page</a> /
+                                <a href="https://x.com/LumaLabsAI/status/2036107826498544110" target="_blank" rel="noopener noreferrer">Launch Video</a>
                             </p>
                         </div>
                     </article>
