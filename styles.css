@@ -193,6 +193,15 @@ footer {
     padding: 20px 0;
 }
 
+.visitor-badge {
+    margin-bottom: 8px;
+}
+
+.visitor-badge img {
+    display: inline-block;
+    height: 20px;
+}
+
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
