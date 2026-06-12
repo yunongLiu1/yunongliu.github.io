@@ -23,8 +23,34 @@
     </script>
 
     <!-- GoatCounter -->
-    <script data-goatcounter="https://yunongliu.goatcounter.com/count"
-            async src="//gc.zgo.at/count.js"></script>
+    <script>
+      (function() {
+        const endpoint = 'https://yunongliu.goatcounter.com/count';
+        const params = new URLSearchParams();
+
+        params.set('p', window.location.pathname + window.location.search);
+        params.set('t', document.title);
+        params.set('s', [
+          window.screen.width,
+          window.screen.height,
+          window.devicePixelRatio || 1
+        ].join(','));
+        params.set('rnd', Math.random().toString(36).slice(2));
+
+        if (document.referrer) {
+          params.set('r', document.referrer);
+        }
+
+        if (window.location.search) {
+          params.set('q', window.location.search.slice(1));
+        }
+
+        new Image().src = endpoint + '?' + params.toString();
+      })();
+    </script>
+    <noscript>
+      <img src="https://yunongliu.goatcounter.com/count?p=/" alt="" style="position:absolute;left:-9999px;width:1px;height:1px;">
+    </noscript>
 
 </head>
 <body>
