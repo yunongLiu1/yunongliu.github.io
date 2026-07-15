@@ -81,7 +81,7 @@
                         <p class="subtitle">Research @ Luma AI</p>
                         <p>I work on multimodal image/video generation and world models, structured visual generation, post-training, reward modeling, and multimodal evaluation.</p>
                         <p>My current interest is moving visual generative models beyond flat pixels: toward structured, editable, and verifiable representations that can support reasoning, simulation, and eventually action in physical or interactive environments.</p>
-                        <p>I lead Layering, a structured visual generation system that turns flat generated images or design media into editable raster, text, vector, and alpha-aware components for multi-turn human and agent editing.</p>
+                        <p>I led Layering, a structured visual generation system that turns flat generated images or design media into editable raster, text, and vector layers for multi-turn human and agent editing.</p>
                         <p>Before Layering, I worked across Luma's image and video generation models, including <a href="https://lumalabs.ai/ray">Ray3</a> and <a href="https://lumalabs.ai/uni-1">Uni-1</a>. I built the experimental RL/post-training workflow for Ray3 video generation, including sample generation loops, reward modeling, VLM-as-judge graders, held-out evaluation, and diffusion RL, DPO-style, and GRPO-style experiments. I also contributed RL/data/eval experiments for Uni-1, including OCR-focused rewards, caption/data ablations, and early evaluation.</p>
                         <p>Before Luma, I completed my Stanford MSCS with <a href="https://jiajunwu.com">Jiajun Wu</a>, where I led IKEA Manuals at Work, a first-author NeurIPS 2024 project on 4D grounding of real-world assembly videos to 3D structure over time. I received my BEng in Electronics and Computer Science from the University of Edinburgh, ranking 2nd in my cohort.</p>
                         <div class="focus-tags" aria-label="Research focus areas">
@@ -124,7 +124,7 @@
                 <div class="current-work-grid">
                     <article class="current-work-item">
                         <h3>Multi-Turn Agent Editing</h3>
-                        <p>I lead Layering, which turns flat generated images or design media into editable components across vectorized SVG, text, and alpha-aware pixels. The goal is to make generated media structured enough for people and agents to inspect, revise, verify, and build on across multiple turns.</p>
+                        <p>I led Layering, which turns flat generated images or design media into editable raster, text, and vector layers. The goal was to make generated media structured enough for people and agents to inspect, revise, verify, and build on across multiple turns.</p>
                     </article>
                     <article class="current-work-item">
                         <h3>RL &amp; Reward Modeling</h3>
@@ -142,23 +142,23 @@
             <div class="container">
                 <h2>Model Releases</h2>
                 <div class="model-release-list">
-                    <article class="model-release-item">
+                    <article class="model-release-item lyr-item">
                         <div class="model-release-media">
-                            <video controls muted playsinline preload="none" poster="images/model-releases/ray3.jpg">
-                                <source src="https://static.cdn-luma.com/files/sanity/efd14522-2187-4f01-a2f4-f11240fae610.mp4" type="video/mp4">
-                                <img src="images/model-releases/ray3.jpg" alt="Ray3 preview">
-                            </video>
+                            <div class="lyr-stage"><div class="lyr-deck" id="lyr-deck"></div></div>
+                            <div class="lyr-nav">
+                                <button class="lyr-arrow" id="lyr-prev" type="button" aria-label="Previous design">&#8249;</button>
+                                <span class="lyr-title" id="lyr-title"></span>
+                                <button class="lyr-arrow" id="lyr-next" type="button" aria-label="Next design">&#8250;</button>
+                            </div>
+                            <div class="lyr-thumbs" id="lyr-thumbs"></div>
                         </div>
                         <div class="model-release-content">
-                            <h3><a href="https://lumalabs.ai/ray" target="_blank" rel="noopener noreferrer">Ray3</a></h3>
-                            <p>Ray3 is Luma's next-generation video model, focused on reasoning-driven generation, controllable video-to-video workflows, character reference, keyframes, HDR, and production-grade fidelity.</p>
+                            <h3>Layering <span class="lyr-count" id="lyr-count"></span></h3>
+                            <p>Layering turns a flat generated image into editable raster, text, and vector layers, structured enough for people and agents to inspect, revise, verify, and rebuild across multiple turns.</p>
                             <ul class="contribution-list">
-                                <li>Built the experimental RL/post-training workflow for video generation, including sample generation loops, reward modeling, VLM-as-judge graders, held-out evaluation, and diffusion RL, DPO-style, and GRPO-style experiments.</li>
+                                <li>Led the project end-to-end.</li>
                             </ul>
-                            <p class="model-release-links">
-                                <a href="https://lumalabs.ai/ray" target="_blank" rel="noopener noreferrer">Launch Page</a> /
-                                <a href="https://x.com/LumaLabsAI/status/1968684330034606372" target="_blank" rel="noopener noreferrer">Launch Video</a>
-                            </p>
+                            <p class="lyr-hint">Hover the preview to peel it apart · hover a layer to name it · ‹ › to switch design</p>
                         </div>
                     </article>
                     <article class="model-release-item">
@@ -170,6 +170,7 @@
                         </div>
                         <div class="model-release-content">
                             <h3><a href="https://lumalabs.ai/uni-1" target="_blank" rel="noopener noreferrer">Uni-1</a></h3>
+                            <p class="model-release-date">March 2026</p>
                             <p>Uni-1 is Luma's unified multimodal model for interleaved language and image understanding, reasoning, and generation.</p>
                             <ul class="contribution-list">
                                 <li>Contributed RL/data/eval experiments for unified multimodal image understanding and generation, including OCR-focused rewards, caption/data ablations, and early evaluation.</li>
@@ -180,6 +181,26 @@
                             </p>
                         </div>
                     </article>
+                    <article class="model-release-item">
+                        <div class="model-release-media">
+                            <video controls muted playsinline preload="none" poster="images/model-releases/ray3.jpg">
+                                <source src="https://static.cdn-luma.com/files/sanity/efd14522-2187-4f01-a2f4-f11240fae610.mp4" type="video/mp4">
+                                <img src="images/model-releases/ray3.jpg" alt="Ray3 preview">
+                            </video>
+                        </div>
+                        <div class="model-release-content">
+                            <h3><a href="https://lumalabs.ai/ray" target="_blank" rel="noopener noreferrer">Ray3</a></h3>
+                            <p class="model-release-date">September 2025</p>
+                            <p>Ray3 is Luma's next-generation video model, focused on reasoning-driven generation, controllable video-to-video workflows, character reference, keyframes, HDR, and production-grade fidelity.</p>
+                            <ul class="contribution-list">
+                                <li>Built the experimental RL/post-training workflow for video generation, including sample generation loops, reward modeling, VLM-as-judge graders, held-out evaluation, and diffusion RL, DPO-style, and GRPO-style experiments.</li>
+                            </ul>
+                            <p class="model-release-links">
+                                <a href="https://lumalabs.ai/ray" target="_blank" rel="noopener noreferrer">Launch Page</a> /
+                                <a href="https://x.com/LumaLabsAI/status/1968684330034606372" target="_blank" rel="noopener noreferrer">Launch Video</a>
+                            </p>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -187,7 +208,7 @@
         <section id="research-interests">
             <div class="container">
                 <h2>This Year ✨</h2>
-                <p class="research-direction-intro">This year, I am interested in visual generation as a bridge between pixels, structure, code, feedback, and action. I want generated artifacts to be more than flat outputs: structured states that people and agents can inspect, revise, verify, and reuse in interactive multi-turn workflows. In design, this means layouts, diagrams, interfaces, product visuals, SVG, HTML, UI components, and other code-backed representations. In coding, it means artifacts that agents can read, modify, test, and verify instead of treating visual outputs as opaque images. In video and embodied settings, it points toward visual models that preserve spatial, temporal, and object-level structure well enough to support downstream reasoning and action. Layering is one attempt at this direction, with reward design and repeated-edit evals as the feedback loop around it.</p>
+                <p class="research-direction-intro">This year, I am interested in visual generation as a bridge between pixels, structure, code, feedback, and action. I want generated artifacts to be more than flat outputs: structured states that people and agents can inspect, revise, verify, and reuse in interactive multi-turn workflows. In design, this means layouts, diagrams, interfaces, product visuals, SVG, HTML, UI components, and other code-backed representations. In coding, it means artifacts that agents can read, modify, test, and verify instead of treating visual outputs as opaque images. In video and embodied settings, it points toward visual models that preserve spatial, temporal, and object-level structure well enough to support downstream reasoning and action. Layering was one attempt at this direction, with reward design and repeated-edit evals as the feedback loop around it.</p>
             </div>
         </section>
 
@@ -465,7 +486,7 @@
         <div class="container">
             <h2>My Purr-fect Companions</h2>
             <div class="cat-grid">
-                <div class="cat-card">
+                <div class="cat-card cat-card--mewomewo">
                     <img src="images/cats/mewomewo.png" alt="Mewomewo" class="cat-image">
                     <div class="cat-content">
                         <h3>Mewomewo</h3>
@@ -479,7 +500,7 @@
                         <p>Mewomewo is the queen of the house since 2012. She acts cool but secretly loves attention. She's super brave, except when it comes to mess. You'll often see her checking if the house is clean and tidy.</p>
                     </div>
                 </div>
-                <div class="cat-card">
+                <div class="cat-card cat-card--xiaopang">
                     <img src="images/cats/xiaopang.png" alt="Xiaopang" class="cat-image">
                     <div class="cat-content">
                         <h3>Xiaopang (Little Fat)</h3>
@@ -505,6 +526,16 @@
 
     </footer>
 
+    <button id="back-to-top" aria-label="Back to top" title="Back to top">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true">
+            <ellipse cx="12" cy="14.5" rx="4.6" ry="3.8"/>
+            <ellipse cx="5.4" cy="10.8" rx="1.9" ry="2.5" transform="rotate(-20 5.4 10.8)"/>
+            <ellipse cx="9.6" cy="7.6" rx="1.9" ry="2.6" transform="rotate(-8 9.6 7.6)"/>
+            <ellipse cx="14.4" cy="7.6" rx="1.9" ry="2.6" transform="rotate(8 14.4 7.6)"/>
+            <ellipse cx="18.6" cy="10.8" rx="1.9" ry="2.5" transform="rotate(20 18.6 10.8)"/>
+        </svg>
+    </button>
+
     <script>
         // Profile photo auto-cycling
         const profilePhotos = document.querySelectorAll('.profile-photo');
@@ -522,5 +553,54 @@
             profilePhotos[currentIndex].classList.add('active');
         }, 3000); // Change photo every 3 seconds
     </script>
+
+    <script>
+        // Scroll-reveal animations + back-to-top paw (both respect reduced motion)
+        (function () {
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            if (!prefersReducedMotion && 'IntersectionObserver' in window) {
+                const targets = document.querySelectorAll(
+                    '.current-work-item, .model-release-item, .publication-item, ' +
+                    '#projects .project-card, .cat-card, main section h2, #cats h2'
+                );
+                const observer = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('revealed');
+                            setTimeout(function () { entry.target.style.transitionDelay = ''; }, 800);
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.12 });
+                targets.forEach(function (el, i) {
+                    el.classList.add('reveal-init');
+                    el.style.transitionDelay = (i % 3) * 0.08 + 's';
+                    if (el.tagName === 'H2') {
+                        const trail = document.createElement('span');
+                        trail.className = 'paw-trail';
+                        trail.setAttribute('aria-hidden', 'true');
+                        trail.innerHTML = '<i></i><i></i><i></i>';
+                        el.appendChild(trail);
+                    }
+                    observer.observe(el);
+                });
+            }
+
+            const backToTop = document.getElementById('back-to-top');
+            window.addEventListener('scroll', function () {
+                backToTop.classList.toggle('visible', window.scrollY > 500);
+            }, { passive: true });
+            backToTop.addEventListener('click', function () {
+                window.scrollTo({ top: 0, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+            });
+        })();
+    </script>
+
+    <!-- Layering: flat design peels into editable layers -->
+    <script src="js/layering.js"></script>
+
+    <!-- Calico Mewomewo chases your cursor (oneko.js) -->
+    <script src="js/oneko.js" data-cat="./images/oneko-cat.png" data-persist-position="false"></script>
 </body>
 </html>
