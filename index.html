@@ -58,13 +58,11 @@
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#current-work">Current Work</a></li>
-                <li><a href="#model-releases">Model Releases</a></li>
-                <li><a href="#research-interests">Interests</a></li>
+                <li><a href="#model-releases">Selected Work</a></li>
+                <li><a href="#research-interests">Research</a></li>
                 <li><a href="#publications">Publications</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="other-projects.html">Other Projects</a></li>
 
-                <!-- <li><a href="#contact">Contact</a></li> -->
             </ul>
         </nav>
         <div class="personal-motto">
@@ -79,21 +77,11 @@
                     <div class="about-text">
                         <h1>Yunong Liu</h1>
                         <p class="subtitle">Research @ Luma AI</p>
-                        <p>I work on multimodal image/video generation and world models, structured visual generation, post-training, reward modeling, and multimodal evaluation.</p>
+                        <p>My research at Luma AI spans multimodal image and video generation, world models, and structured visual generation, with a focus on post-training, reward modeling, and evaluation.</p>
                         <p>My current interest is moving visual generative models beyond flat pixels: toward structured, editable, and verifiable representations that can support reasoning, simulation, and eventually action in physical or interactive environments.</p>
-                        <p>I led Layering, a structured visual generation system that turns flat generated images or design media into editable raster, text, and vector layers for multi-turn human and agent editing.</p>
-                        <p>Before Layering, I worked across Luma's image and video generation models, including <a href="https://lumalabs.ai/ray">Ray3</a> and <a href="https://lumalabs.ai/uni-1">Uni-1</a>. I built the experimental RL/post-training workflow for Ray3 video generation, including sample generation loops, reward modeling, VLM-as-judge graders, held-out evaluation, and diffusion RL, DPO-style, and GRPO-style experiments. I also contributed RL/data/eval experiments for Uni-1, including OCR-focused rewards, caption/data ablations, and early evaluation.</p>
-                        <p>Before Luma, I completed my Stanford MSCS with <a href="https://jiajunwu.com">Jiajun Wu</a>, where I led IKEA Manuals at Work, a first-author NeurIPS 2024 project on 4D grounding of real-world assembly videos to 3D structure over time. I received my BEng in Electronics and Computer Science from the University of Edinburgh, ranking 2nd in my cohort.</p>
-                        <div class="focus-tags" aria-label="Research focus areas">
-                            <span>Image/video generation</span>
-                            <span>World models</span>
-                            <span>Structured visual generation</span>
-                            <span>Reward modeling</span>
-                            <span>Multimodal evaluation</span>
-                        </div>
-    
-                        <!-- <font color="rgba(234, 47, 47, 0.839);"> <b>I am actively looking for a PhD position starting from Fall 2025. :> Feel free to check my <a href="files/resume.pdf">resume</a> or reach out to me at <a href="mailto:yunong.liu20@gmail.com">yunong.liu20@gmail.com</a>!</b></font> -->
-
+                        <p>I led research and system development for Layering, a structured visual generation system that transforms generated images and design media into editable raster, text, and vector layers, enabling multi-turn editing by people and agents.</p>
+                        <p>My work also spans Luma's <a href="https://lumalabs.ai/ray">Ray3</a> and <a href="https://lumalabs.ai/uni-1">Uni-1</a> models. For Ray3, I built the experimental post-training workflow connecting video generation, reward modeling, VLM-as-judge graders, and held-out evaluation, and explored diffusion RL, DPO-style, and GRPO-style approaches. For Uni-1, I contributed to reinforcement learning, data, and evaluation experiments, including OCR-focused rewards, caption and data ablations, and early evaluation.</p>
+                        <p>Before Luma, I completed my MS in Computer Science at Stanford with <a href="https://jiajunwu.com">Jiajun Wu</a>, where my research focused on visual understanding, spatiotemporal grounding, and multimodal evaluation. I hold a BEng in Electronics and Computer Science from the University of Edinburgh.</p>
 
                         <div class="social-links">
                             <a href="https://github.com/yunongLiu1" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -118,29 +106,9 @@
             </div>
         </section>
 
-        <section id="current-work">
-            <div class="container">
-                <h2>Current Work</h2>
-                <div class="current-work-grid">
-                    <article class="current-work-item">
-                        <h3>Multi-Turn Agent Editing</h3>
-                        <p>I led Layering, which turns flat generated images or design media into editable raster, text, and vector layers. The goal was to make generated media structured enough for people and agents to inspect, revise, verify, and build on across multiple turns.</p>
-                    </article>
-                    <article class="current-work-item">
-                        <h3>RL &amp; Reward Modeling</h3>
-                        <p>I worked across Luma's image and video generation models, including Ray3 and Uni-1. For Ray3, I built the experimental RL/post-training workflow for video generation, including sample generation loops, diffusion RL, DPO-style and GRPO-style experiments, reward modeling, VLM-as-judge graders, and held-out evaluation calibrated against human preference.</p>
-                    </article>
-                    <article class="current-work-item">
-                        <h3>Model Behavior Evals</h3>
-                        <p>I build evals that measure visual model behavior: instruction following, language grounding, information preservation, edit success over repeated interventions, and usefulness in real workflows. These evals guide data, reward, conditioning, and model changes.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
         <section id="model-releases">
             <div class="container">
-                <h2>Model Releases</h2>
+                <h2>Selected Work</h2>
                 <div class="model-release-list">
                     <article class="model-release-item lyr-item">
                         <div class="model-release-media">
@@ -157,7 +125,7 @@
                             <p class="model-release-date">July 2026</p>
                             <p>Layering turns a flat generated image into editable raster, text, and vector layers, structured enough for people and agents to inspect, revise, verify, and rebuild across multiple turns.</p>
                             <ul class="contribution-list">
-                                <li>Led the project end-to-end.</li>
+                                <li>Led research and system development for Layering, from structured visual generation to multi-turn editing and evaluation.</li>
                             </ul>
                             <p class="lyr-hint">Hover the preview to peel it apart · hover a layer to name it · ‹ › to switch design</p>
                             <p class="model-release-links">
@@ -178,7 +146,7 @@
                             <p class="model-release-date">March 2026</p>
                             <p>Uni-1 is Luma's unified multimodal model for interleaved language and image understanding, reasoning, and generation.</p>
                             <ul class="contribution-list">
-                                <li>Contributed RL/data/eval experiments for unified multimodal image understanding and generation, including OCR-focused rewards, caption/data ablations, and early evaluation.</li>
+                                <li>Contributed to reinforcement learning, data, and evaluation experiments for Uni-1, with a focus on OCR rewards and the effects of caption and training data choices.</li>
                             </ul>
                             <p class="model-release-links">
                                 <a href="https://lumalabs.ai/uni-1" target="_blank" rel="noopener noreferrer">Launch Page</a> /
@@ -196,9 +164,9 @@
                         <div class="model-release-content">
                             <h3><a href="https://lumalabs.ai/ray" target="_blank" rel="noopener noreferrer">Ray3</a></h3>
                             <p class="model-release-date">September 2025</p>
-                            <p>Ray3 is Luma's next-generation video model, focused on reasoning-driven generation, controllable video-to-video workflows, character reference, keyframes, HDR, and production-grade fidelity.</p>
+                            <p>Ray3 is Luma's video generation model, supporting controllable video-to-video generation, character references, keyframes, and HDR.</p>
                             <ul class="contribution-list">
-                                <li>Built the experimental RL/post-training workflow for video generation, including sample generation loops, reward modeling, VLM-as-judge graders, held-out evaluation, and diffusion RL, DPO-style, and GRPO-style experiments.</li>
+                                <li>Built Ray3's experimental post-training workflow, integrating video sampling, reward modeling, and held-out evaluation to study reinforcement learning for video generation.</li>
                             </ul>
                             <p class="model-release-links">
                                 <a href="https://lumalabs.ai/ray" target="_blank" rel="noopener noreferrer">Launch Page</a> /
@@ -213,7 +181,9 @@
         <section id="research-interests">
             <div class="container">
                 <h2>This Year ✨</h2>
-                <p class="research-direction-intro">This year, I am interested in visual generation as a bridge between pixels, structure, code, feedback, and action. I want generated artifacts to be more than flat outputs: structured states that people and agents can inspect, revise, verify, and reuse in interactive multi-turn workflows. In design, this means layouts, diagrams, interfaces, product visuals, SVG, HTML, UI components, and other code-backed representations. In coding, it means artifacts that agents can read, modify, test, and verify instead of treating visual outputs as opaque images. In video and embodied settings, it points toward visual models that preserve spatial, temporal, and object-level structure well enough to support downstream reasoning and action. Layering was one attempt at this direction, with reward design and repeated-edit evals as the feedback loop around it.</p>
+                <p class="research-direction-intro">This year, I am interested in visual generation as a bridge between pixels, structure, code, feedback, and action. I want generated artifacts to be more than flat outputs: structured states that people and agents can inspect, revise, verify, and reuse in interactive multi-turn workflows.</p>
+                <p class="research-direction-intro">In design, this means layouts, diagrams, interfaces, product visuals, SVG, HTML, UI components, and other code-backed representations. In coding, it means artifacts that agents can read, modify, test, and verify instead of treating visual outputs as opaque images. In video and embodied settings, it points toward visual models that preserve spatial, temporal, and object-level structure well enough to support downstream reasoning and action.</p>
+                <p class="research-direction-intro">Layering was one attempt at this direction, with reward design and repeated-edit evals as the feedback loop around it. I build evaluations that measure instruction following, language grounding, information preservation, edit success over repeated interventions, and usefulness in real workflows. These evaluations guide data, reward, conditioning, and model changes.</p>
             </div>
         </section>
 
@@ -244,7 +214,7 @@
                                 </span>
                             </div>
                             <p class="publication-description">
-                                Equal-contribution work introducing CaptionQA, a utility-based benchmark with 33,027 multiple-choice questions across Natural, Document, E-commerce, and Embodied AI domains. We show measurable gaps between image and caption utility even for state-of-the-art multimodal models, reflecting my interest in evals that measure whether visual representations preserve the information people actually need.
+                                Introduces CaptionQA, a utility-based benchmark with 33,027 multiple-choice questions across Natural, Document, E-commerce, and Embodied AI domains. It measures how well captions preserve the information needed for downstream tasks, revealing gaps between image and caption utility even for state-of-the-art multimodal models.
                             </p>
                         </div>
                     </div>
@@ -273,7 +243,7 @@
                                 </span>
                             </div>
                             <p class="publication-description">
-                                Contributor to a counterfactual probe over video-diffusion logits that extracts optical flow with no labels and no fine-tuning. The method achieves state-of-the-art TAP-Vid results, generalizes to in-the-wild videos, and outperforms specialized optical-flow baselines.
+                                Introduces a counterfactual probe over video-diffusion logits that extracts optical flow with no labels and no fine-tuning. The method achieves state-of-the-art TAP-Vid results, generalizes to in-the-wild videos, and outperforms specialized optical-flow baselines.
                             </p>
                         </div>
                     </div>
@@ -303,7 +273,7 @@
                                 </span>
                             </div>
                             <p class="publication-description">
-                                First-author work and sole student lead on the first dataset aligning real-world assembly videos with 3D models and instruction manuals. Built cross-frame optimization with temporal-consistency constraints across 34k+ frames over 98 videos, and coordinated annotation / validation for evaluating whether models can ground human instructions in real visual workflows.
+                                Introduces a dataset and grounding framework that align real-world assembly videos with 3D models and instruction manuals, tracking assembly structure over time. Cross-frame optimization with temporal-consistency constraints supports 4D grounding across 34k+ frames from 98 videos.
                             </p>
                         </div>
                     </div>
@@ -330,161 +300,6 @@
             </div>
         </section>
 
-        <section id="projects">
-            <div class="container">
-                <h2>Selected Toy/Course Projects</h2>
-                
-                <div class="project-grid">
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/emomask/emomask.gif" alt="EMo-Mask Project">
-                        </div>
-                        <div class="project-content">
-                            <h3>EMo-Mask</h3>
-                            <p>Emotion-controllable motion generation · Stanford CS348I · 2024 <a href="https://yunongliu1.github.io/emo-mask.github.io/" target="_blank" rel="noopener noreferrer" class="button">Project</a></p>
-                            
-
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/justdance/JustDance_giif.gif" alt="Just Dance Everywhere Project">
-                        </div>
-                        <div class="project-content">
-                            <h3>Just Dance Everywhere</h3>
-                            <p>Best Course Project Award · UT Austin EE379K · 2022 <a href="https://github.com/adiojha629/JustDance_Everywhere" target="_blank" rel="noopener noreferrer" class="button">GitHub</a></p>
-                            
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/cs148/scene_render512.png" alt="Gates 3rd Floor Project">
-                        </div>
-                        <div class="project-content">
-                            <h3>Gates 3rd Floor Render</h3>
-                            <p>A+ grade and course showcase · Stanford CS148 · 2024 <a href="images/cs148/scene_render512.png" target="_blank" rel="noopener noreferrer" class="button">Render</a> <a href="https://web.stanford.edu/class/cs148/showcase.html" target="_blank" rel="noopener noreferrer" class="button">Showcase</a></p>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="section" id="awards">
-            <div class="container grid">
-                <h2>Awards</h2>
-                <ul>
-                    <li>UT Austin Cockrell School of Engineering Fellowship (Declined), <strong>Apr 2023</strong></li>
-                    <li>Turing Scheme Funding, <strong>January 2022</strong></li>
-                    <li>Leadership in Student Opportunities Edinburgh Award, <strong>July 2021</strong></li>
-                    <li>1st Year Class Medal, awarded to the top overall student in 1st year Electronics and Electrical Engineering Discipline at University of Edinburgh, <strong>July 2020</strong></li>
-                </ul>
-            </div>
-        </section>
-        <section class="section" id="experience">
-            <div class="container grid">
-                <h2>Other Experience</h2>
-                <ul>
-                    <li><p>Student Tech Intern, Semiconductor Manufacturing Anomaly Detection, NXP Semiconductors, Tianjin, China, <strong>May 2021 - Aug 2021</strong></p></li>
-                    <li><p>Deep Learning Intern, Wind Farm Performance AI Optimization, Zealen AI (Startup), Beijing, China, <strong>Aug 2021 - Sep 2021</strong></p></li>
-
-                    <li><p>Research Assistant - NLP Project, University of Edinburgh, Worked with <a href="https://en.wikipedia.org/wiki/Bonnie_Webber">Prof Bonnie Webber</a> on discourse relation analysis, <strong>July 2022 - Jan 2023</strong></p></li>
-                    
-                    <li><p>Teaching Demonstrator, University of Edinburgh, InfBase, <strong>Sep 2022 - Jan 2023</strong></p></li>
-                    <li><p>Programme Representative, University of Edinburgh, <strong>Sep 2022 - June 2023</strong> </p></li>
-                    <li><p>Global Buddies Program Mentor, University of Edinburgh, <strong>Sep 2021 - June 2022</strong></p></li>
-                    <li><p>Volunteer, Sri Lanka Wildlife Conservation Society (SLWCS), <strong>Jul 2019 - Aug 2019</strong></p></li>
-                    
-                </ul>
-            </div>
-        </section>
-        
-        <!-- <section id="experience">
-            <div class="container">
-                <h2>Industry Experience</h2>
-                <div class="experience-list"> -->
-                
-                    <!-- <div class="experience-item">
-                        <p><strong>Student Tech Intern</strong>, Semiconductor Manufacturing Anomaly Detection</p>
-                        <p>NXP Semiconductors, Tianjin, China | May 2021 - Aug 2021</p> -->
-                        <!-- <ul>
-                            <li>Created validation methodology integrating domain knowledge with statistical confidence measures.</li>
-                            <li>Designed adaptive thresholding mechanism to handle process variations across production lines.</li>
-                            <li>Implemented ensemble detection system combining unsupervised learning methods (Isolation Forest, One-Class SVM)</li>
-                        </ul> -->
-                    <!-- </div> -->
-
-                    <!-- <div class="experience-item">
-                        <p><strong>Deep Learning Intern</strong>, Wind Farm Performance AI Optimization</p>
-                        <p>Zealen AI (Startup), Beijing, China | Aug 2021 - Sep 2021</p> -->
-                        <!-- <ul>
-                            <li>Helped on developing a framework combining LIDAR measurements with multi-spectral satellite imagery for wind pattern analysis.</li>
-                            <li>Designed and validated forecasting system integrating physical models with learned spatial-temporal features</li>
-                        </ul> -->
-                    <!-- </div>
-                    
-            </div>
-        </section> -->
-        <!-- <section id="other-experience">
-            <div class="container">
-                <h2>Other Experience</h2>
-                <div class="other-experience-list"> -->
-                    <!-- Research Experience -->
-                    <!-- <div class="experience-item">
-                        <h3>Research Assistant - NLP Project</h3>
-                        <p><strong>University of Edinburgh</strong> | July 2022 - Jan 2023</p>
-                        <p>Worked with <a href="https://en.wikipedia.org/wiki/Bonnie_Webber">Prof Bonnie Webber</a> on discourse relation analysis:</p>
-                        <ul>
-                            <li>Investigated relationships between non-canonical syntax (preposing) and discourse relations using large language models</li>
-                            <li>Developed mask-filling tasks with BERT to analyze implicit discourse relations</li>
-                            <li>Achieved quantitative evidence for syntactic effects on relation prediction</li>
-                        </ul>
-                        <p><small>Helped with a <a href="https://aclanthology.org/2024.eacl-long.170.pdf" target="_blank">publication</a> in EACL 2024.</small></p>
-                    </div> -->
-        
-                    <!-- Teaching and Academic Leadership -->
-                    <!-- <div class="experience-item">
-                        <h3>Academic Leadership</h3>
-                        <p><strong>University of Edinburgh</strong> | 2022 - 2023</p>
-                        <ul>
-                            <li><strong>Teaching Demonstrator, InfBase</strong> (Sep 2022 - Jan 2023)
-                                <ul>
-                                    <li>Provided tutoring for year-1 and year-2 students in various Computer Science courses</li>
-                                </ul>
-                            </li>
-                            <li><strong>Programme Representative</strong> (Sep 2022 - June 2023)
-                                <ul>
-                                    <li>Collected and coordinated weekly feedback from 3rd year E&EE students</li>
-                                    <li>Served as liaison between students and faculty for curriculum improvements</li>
-                                </ul>
-                            </li>
-                            <li><strong>Global Buddies Program Mentor</strong> (Sep 2021 - June 2022)
-                                <ul>
-                                    <li>Provided guidance and support for incoming international students</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div> -->
-        
-                    <!-- Volunteer Work -->
-                    <!-- <div class="experience-item">
-                        <h3>Volunteer Work</h3>
-                        <ul>
-                            <li>
-                                <strong>Sri Lanka Wildlife Conservation Society (SLWCS)</strong> | Jul 2019 - Aug 2019
-                                <ul>
-                                    <li>Developed strategies to mitigate human-elephant conflicts</li>
-                                    <li>Conducted community outreach and education programs</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        
-        
     </main>
 
     <section id="cats">
@@ -566,8 +381,8 @@
 
             if (!prefersReducedMotion && 'IntersectionObserver' in window) {
                 const targets = document.querySelectorAll(
-                    '.current-work-item, .model-release-item, .publication-item, ' +
-                    '#projects .project-card, .cat-card, main section h2, #cats h2'
+                    '.model-release-item, .publication-item, ' +
+                    '.cat-card, main section h2, #cats h2'
                 );
                 const observer = new IntersectionObserver(function (entries) {
                     entries.forEach(function (entry) {
