@@ -1637,3 +1637,50 @@ main section h2:hover .paw-trail i:last-child,
     from { transform: rotate(0deg); }
     to   { transform: rotate(360deg); }
 }
+
+/* Compact, keyboard-accessible news archive. */
+.news-hint {
+    margin: -8px 0 12px;
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.news-scroll {
+    max-height: 240px;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
+    scrollbar-color: #9c80b1 #f5f1f8;
+    border: 1px solid rgba(51, 29, 65, 0.12);
+    border-radius: 10px;
+    padding: 0 18px;
+    background: #fff;
+}
+
+.news-scroll:focus-visible {
+    outline: 2px solid #7b2cbf;
+    outline-offset: 4px;
+}
+
+.news-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.news-list li {
+    display: grid;
+    grid-template-columns: 88px minmax(0, 1fr);
+    gap: 16px;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(51, 29, 65, 0.08);
+    line-height: 1.65;
+}
+
+.news-list li:last-child { border-bottom: 0; }
+.news-list time { color: #6d438a; font-weight: 600; font-size: 0.9rem; }
+
+@media (max-width: 600px) {
+    .news-scroll { max-height: 280px; padding: 0 14px; }
+    .news-list li { grid-template-columns: 1fr; gap: 4px; }
+}
